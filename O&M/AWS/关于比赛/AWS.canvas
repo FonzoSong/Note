@@ -8,10 +8,11 @@
 		{"id":"154d859698d4890a","type":"file","file":"O&M/AWS/来杯咖啡!!!/RDS.md","x":620,"y":960,"width":400,"height":400},
 		{"id":"3fa00075406c8a51","type":"text","text":"添加RDS实例","x":200,"y":1130,"width":250,"height":60},
 		{"id":"de7ae633a73d8e29","type":"text","text":"创建EC2","x":200,"y":1580,"width":250,"height":60},
-		{"id":"5dd09353576a100d","x":620,"y":1410,"width":400,"height":400,"type":"file","file":"O&M/AWS/来杯咖啡!!!/EC2.md"},
-		{"id":"fa77f0a96d0f6546","x":200,"y":2000,"width":250,"height":60,"type":"text","text":"创建安全组"},
-		{"id":"7b18a29dac024dca","x":200,"y":2240,"width":250,"height":60,"type":"text","text":"设定自动扩缩容"},
-		{"id":"501c5c7ca2d11146","x":200,"y":2520,"width":250,"height":60,"type":"text","text":"设定负载均衡"}
+		{"id":"5dd09353576a100d","type":"file","file":"O&M/AWS/来杯咖啡!!!/EC2.md","x":620,"y":1410,"width":400,"height":400},
+		{"id":"fa77f0a96d0f6546","type":"text","text":"创建安全组","x":200,"y":2000,"width":250,"height":60},
+		{"id":"7b18a29dac024dca","type":"text","text":"设定自动扩缩容","x":200,"y":2240,"width":250,"height":60},
+		{"id":"501c5c7ca2d11146","type":"text","text":"设定负载均衡","x":200,"y":2520,"width":250,"height":60},
+		{"id":"8d6442185587f795","x":1340,"y":960,"width":400,"height":400,"type":"file","file":"O&M/AWS/来杯咖啡!!!/postgresql for AWS RDS.md"}
 	],
 	"edges":[
 		{"id":"6c6606a54fa64791","fromNode":"83fff210e5738b6f","fromSide":"right","toNode":"49b80fe855f536c4","toSide":"top"},
@@ -24,6 +25,7 @@
 		{"id":"dd1c43469c6d7f91","fromNode":"de7ae633a73d8e29","fromSide":"right","toNode":"5dd09353576a100d","toSide":"left"},
 		{"id":"fce6ae71fd782cc0","fromNode":"de7ae633a73d8e29","fromSide":"bottom","toNode":"fa77f0a96d0f6546","toSide":"top"},
 		{"id":"ab8380b9d6d310d3","fromNode":"fa77f0a96d0f6546","fromSide":"bottom","toNode":"7b18a29dac024dca","toSide":"top"},
-		{"id":"49b67045a4bcc7b5","fromNode":"7b18a29dac024dca","fromSide":"bottom","toNode":"501c5c7ca2d11146","toSide":"top"}
+		{"id":"49b67045a4bcc7b5","fromNode":"7b18a29dac024dca","fromSide":"bottom","toNode":"501c5c7ca2d11146","toSide":"top"},
+		{"id":"7410e042664eb19c","fromNode":"154d859698d4890a","fromSide":"right","toNode":"8d6442185587f795","toSide":"left"}
 	]
 }
