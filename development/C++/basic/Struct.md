@@ -1,7 +1,9 @@
 >[!NOTE] 自行定义的数据类型
->允许存储不同类型的数据项;
->也可以定义函数;
->PS: 多说无益,直接上代码
+>允许存储不同类型的数据项,称为成员;
+>也可以定义函数;(不建议,如需定义函数,应使用函数)
+
+---
+***多说无益,直接上代码***
 
 ## basis
 #### 示例:
@@ -15,7 +17,7 @@ struct player
     int EP;
     bool WhoIsYourDaddy;
     int X,Y;
-}player2;//!!!注目!!!在这里声明了player2!!!
+}player2;!!!注目!!!在这里声明了player2!!!
   
 int main(int argc, char const *argv[])
 
@@ -92,7 +94,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-### 在 `struce` 中可以包含函数;
+###  `struce` 包含函数;
 #### 示例:
 ```c++
 struct player
@@ -122,4 +124,46 @@ struct player
     };
 
 };
+
+int main(int argc, char const *argv[])
+
+{
+
+    player player0(0,100,100,0,0,0,0);
+
+    int x = 1;
+
+    int y = 2;
+
+    player0.Move(x,y);
+
+  
+
+    std::cout   << "####玩家信息####" << '\n'
+
+                << "ID: " << player0.ID     << '\n'
+
+                << "MP: " << player0.MP     << '\n'
+
+                << "HP: " << player0.HP     << '\n'
+
+                << "EP: " << player0.EP     << '\n'
+
+                << "WhoIsYourDaddy: " << player0.WhoIsYourDaddy     << '\n'
+
+                << "X: "  << player0.X   << '\n'
+
+                << "Y: "  << player0.Y   << std::endl;
+
+  
+
+    return 0;
+
+}
 ```
+
+### 结构体的嵌套与指针 
+
+
+
+# `class` 和 `struct` 只有一个区别: `class` 中默认访问限制为 `private` , `struct` 默认访问限制为 `public`
