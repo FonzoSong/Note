@@ -1,0 +1,41 @@
+{
+	"nodes":[
+		{"id":"dcbddb6a54f33be6","type":"group","x":-2140,"y":-2080,"width":1284,"height":865,"label":"六大支柱"},
+		{"id":"ba98f04b8e0eeb06","type":"file","file":"O&M/AWS/来杯咖啡!!!/成本优化.pdf","x":-1696,"y":-2060,"width":400,"height":400},
+		{"id":"109584eee36bd8ab","type":"file","file":"O&M/AWS/来杯咖啡!!!/安全性.pdf","x":-1276,"y":-2060,"width":400,"height":400},
+		{"id":"bdaf6949193adc4d","type":"file","file":"O&M/AWS/来杯咖啡!!!/卓越运营.pdf","x":-2120,"y":-1635,"width":400,"height":400},
+		{"id":"bb2058f9de3506cf","type":"file","file":"O&M/AWS/来杯咖啡!!!/效率.pdf","x":-1706,"y":-1635,"width":400,"height":400},
+		{"id":"b7e11ac97a824451","type":"file","file":"O&M/AWS/来杯咖啡!!!/可靠性.pdf","x":-1276,"y":-1635,"width":400,"height":400},
+		{"id":"9c5081c4f82300f2","type":"file","file":"O&M/AWS/来杯咖啡!!!/可持续.pdf","x":-2120,"y":-2060,"width":404,"height":400},
+		{"id":"90f3cc4202f52f93","type":"file","file":"O&M/AWS/来杯咖啡!!!/AWS S3.md","x":-1900,"y":-390,"width":400,"height":400},
+		{"id":"3dea2262ca96dc20","type":"file","file":"O&M/AWS/来杯咖啡!!!/Amazon EFS.md","x":-1900,"y":-960,"width":400,"height":400},
+		{"id":"cafdfb9eb9153f10","type":"file","file":"O&M/AWS/来杯咖啡!!!/对象存储与块存储.md","x":-1100,"y":-710,"width":400,"height":400},
+		{"id":"d8b8f01d3cb40035","type":"file","file":"O&M/AWS/来杯咖啡!!!/创建静态网站.md","x":-135,"y":-700,"width":400,"height":400},
+		{"id":"51a78db9d46627c3","type":"file","file":"O&M/AWS/来杯咖啡!!!/架构.md","x":-135,"y":-1480,"width":400,"height":400},
+		{"id":"d97d34bd75ba82c8","type":"text","text":"# 添加存储层","x":-60,"y":-920,"width":250,"height":60},
+		{"id":"8451f3effceaa050","type":"text","text":"# 六大运维支柱","x":-680,"y":-1310,"width":250,"height":60},
+		{"id":"73c1675992e45e8d","type":"file","file":"O&M/AWS/来杯咖啡!!!/动态网站.md","x":-135,"y":80,"width":400,"height":400},
+		{"id":"4ecabd670e20378e","type":"text","text":"# 添加计算层","x":-60,"y":-140,"width":250,"height":60},
+		{"id":"d639ee17d98ab27b","type":"file","file":"O&M/AWS/来杯咖啡!!!/wellarchitected-framework.pdf","x":-755,"y":-1140,"width":400,"height":400},
+		{"id":"b91eaea5cb811569","type":"text","text":"# 数据库层","x":-60,"y":772,"width":250,"height":60},
+		{"id":"bdd8ca4cf80bb6ce","type":"file","file":"O&M/AWS/来杯咖啡!!!/迁移数据库到AWS RDS.md","x":-135,"y":1140,"width":400,"height":400},
+		{"id":"c33b2389e85de6fc","x":680,"y":-310,"width":400,"height":400,"type":"file","file":"O&M/AWS/来杯咖啡!!!/动态网站和静态网站.md"}
+	],
+	"edges":[
+		{"id":"10be01f3a54dd41f","fromNode":"d8b8f01d3cb40035","fromSide":"bottom","toNode":"4ecabd670e20378e","toSide":"top"},
+		{"id":"41a0a926d0a449a3","fromNode":"d97d34bd75ba82c8","fromSide":"bottom","toNode":"d8b8f01d3cb40035","toSide":"top"},
+		{"id":"c71538b16cdefc3b","fromNode":"4ecabd670e20378e","fromSide":"bottom","toNode":"73c1675992e45e8d","toSide":"top"},
+		{"id":"12ef826333b9b9a4","fromNode":"51a78db9d46627c3","fromSide":"bottom","toNode":"d97d34bd75ba82c8","toSide":"top"},
+		{"id":"2e0f2a196473dd1e","fromNode":"51a78db9d46627c3","fromSide":"left","toNode":"8451f3effceaa050","toSide":"right"},
+		{"id":"73eb60d49a269dd8","fromNode":"8451f3effceaa050","fromSide":"left","toNode":"dcbddb6a54f33be6","toSide":"right"},
+		{"id":"e2206d364f655834","fromNode":"cafdfb9eb9153f10","fromSide":"left","toNode":"90f3cc4202f52f93","toSide":"right","label":"对象存储"},
+		{"id":"ae52ba3e507f5630","fromNode":"cafdfb9eb9153f10","fromSide":"left","toNode":"3dea2262ca96dc20","toSide":"right","label":"块存储"},
+		{"id":"402fb1152750071d","fromNode":"d8b8f01d3cb40035","fromSide":"left","toNode":"cafdfb9eb9153f10","toSide":"right"},
+		{"id":"461d2571a1e99b1d","fromNode":"51a78db9d46627c3","fromSide":"bottom","toNode":"d639ee17d98ab27b","toSide":"right"},
+		{"id":"8d65339e621054d0","fromNode":"d639ee17d98ab27b","fromSide":"top","toNode":"8451f3effceaa050","toSide":"bottom"},
+		{"id":"04c0c4c17c3380d4","fromNode":"73c1675992e45e8d","fromSide":"bottom","toNode":"b91eaea5cb811569","toSide":"top"},
+		{"id":"dcbd3e21419afe3d","fromNode":"b91eaea5cb811569","fromSide":"bottom","toNode":"bdd8ca4cf80bb6ce","toSide":"top"},
+		{"id":"6332369614469fbc","fromNode":"c33b2389e85de6fc","fromSide":"left","toNode":"d8b8f01d3cb40035","toSide":"right"},
+		{"id":"df6bec464e9e79bd","fromNode":"c33b2389e85de6fc","fromSide":"left","toNode":"73c1675992e45e8d","toSide":"right"}
+	]
+}
