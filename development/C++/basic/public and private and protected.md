@@ -8,7 +8,7 @@
 
 >通过访问控制可以将类的 `public` 接口和 `private` 实现详细信息和仅供派生类使用的 `protected` 成员分离开;
 
-## 实例:
+## 示例:
 ```c++
 class Point
 {
@@ -42,7 +42,7 @@ protected:      // Declare protected function for derived classes only.
 ||如果使用 **`protected`** 派生，则在派生类中为 **`protected`**|如果使用 **`protected`** 派生，则在派生类中为 **`protected`**|
 ||如果使用 **`public`** 派生，则在派生类中为 **`protected`**|如果使用 **`public`** 派生，则在派生类中为 **`public`**|
 
-### 实例:
+### 示例:
 ```c++
 // access_specifiers_for_base_classes.cpp
 class BaseClass

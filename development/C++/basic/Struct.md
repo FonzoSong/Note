@@ -54,6 +54,9 @@ int main(int argc, char const *argv[])
 包含 `int` 和 `bool` 类型;
 以及三种构建方法;
 
+---
+
+
 ## 结构体数组
 
 #### 示例:
@@ -94,7 +97,7 @@ int main(int argc, char const *argv[])
 }
 ```
 
-###  `struce` 包含函数;
+### `struce` 包含函数;
 #### 示例:
 ```c++
 struct player
@@ -161,9 +164,53 @@ int main(int argc, char const *argv[])
 
 }
 ```
+---
 
 ### 结构体的嵌套与指针 
 
+#### 指针
+示例:
+```c++
+player* pr_playerarr =&playerarr[0];
+
+  
+
+    for (int i = 0; i < 4;i++)
+
+    {
+
+        std::cout << "####Player####" << '\n'
+
+         << "ID: " << pr_playerarr->ID   << '\n'
+
+         << "MP: " << pr_playerarr->MP   << '\n'
+
+         << "HP: " << pr_playerarr->HP   << '\n'
+
+         << "EP: " << pr_playerarr->EP   << '\n'
+
+         << "WhoIsYourDaddy: " << pr_playerarr->WhoIsYourDaddy   << '\n'
+
+         << "X: " << pr_playerarr->X  << '\n'
+
+        << "Y: " << pr_playerarr->Y  << std::endl;
+
+  
+
+        std::cout << sizeof(player) << '\t' << pr_playerarr << std::endl;
+
+        pr_playerarr++;
+
+        std::cout << pr_playerarr << std::endl;
+
+    }
+```
+#### 嵌套
+示例:
+```c++
+
+```
 
 
+---
 # `class` 和 `struct` 只有一个区别: `class` 中默认访问限制为 `private` , `struct` 默认访问限制为 `public`

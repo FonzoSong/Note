@@ -14,7 +14,7 @@
 > `constexpr` 仅仅对指针本身有效;
 > 编译器可以针对 `constexpr` 做很大的优化,例如：将用到的`constexpr`表达式直接替换成结果, 相比宏来说没有额外的开销。
 
-#### 实例
+#### 示例
 ```c++
 #include <iostream>
 using namespace std;
