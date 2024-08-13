@@ -116,16 +116,22 @@ git pull
 
 ### 常用命令汇总
 
-|命令|作用|
-|---|---|
-|`git init`|初始化一个新的 Git 仓库|
-|`git clone`|克隆一个远程仓库|
-|`git status`|查看当前工作目录的状态|
-|`git add`|添加文件到暂存区|
-|`git commit`|提交修改|
-|`git log`|查看提交历史|
-|`git branch`|创建分支|
-|`git checkout`|切换分支|
-|`git merge`|合并分支|
-|`git push`|推送到远程仓库|
-|`git pull`|拉取远程修改|
+| 命令             | 作用             |
+| -------------- | -------------- |
+| `git init`     | 初始化一个新的 Git 仓库 |
+| `git clone`    | 克隆一个远程仓库       |
+| `git status`   | 查看当前工作目录的状态    |
+| `git add`      | 添加文件到暂存区       |
+| `git commit`   | 提交修改           |
+| `git log`      | 查看提交历史         |
+| `git branch`   | 创建分支           |
+| `git checkout` | 切换分支           |
+| `git merge`    | 合并分支           |
+| `git push`     | 推送到远程仓库        |
+| `git pull`     | 拉取远程修改         |
+
+### 参数汇总
+
+| 参数            | 含义            |
+| ------------- | ------------- |
+| --allow-empty | 允许一个没有任何更改的提交 |

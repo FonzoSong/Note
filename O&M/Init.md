@@ -1,4 +1,0 @@
-# workstation
-```shell
-
-```
