@@ -8,7 +8,7 @@
 - 小标题标注 `cm` 为 只需在 `comput node` 进行操作;
 - 所有操作使用 `root or sudo` 权限; 
 - `control node` 最少 `2GB` 内存, `comput node` 最少 `4GB` 内存; 
-- 所有节点建议至少 `40G` 磁盘容量;
+- 所有节点至少 `40G` 磁盘容量;
 - 防火墙与 `selinux` 为关闭状态;
 - 在修改配置文件之前备份;
 
