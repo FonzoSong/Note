@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "development/python/╣╪╙┌▒╚╚№/Getting a token through the API.md",
+                "file": "O&M/Server/FTP/deploy.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "development/python/╣╪╙┌▒╚╚№/Getting a token through the API.md",
+                "file": "O&M/Server/FTP/deploy.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "development/python/╣╪╙┌▒╚╚№/Getting a token through the API.md",
+                "file": "O&M/Server/FTP/deploy.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "development/python/╣╪╙┌▒╚╚№/Getting a token through the API.md"
+                "file": "O&M/Server/FTP/deploy.md"
               }
             }
           }
@@ -148,6 +148,19 @@
   },
   "active": "fe4008cfb4e5ff88",
   "lastOpenFiles": [
+    "O&M/Server/clone-voice/Brief introduction.md",
+    "O&M/Server/FTP/deploy.md",
+    "O&M/Server/FTP",
+    "O&M/Server/clone-voice/deploy.md",
+    "development/python/Python virtual environment.md",
+    "O&M/Server/kubernetes/study/deploy.md",
+    "O&M/Server/kubernetes/study",
+    "O&M/Server/kubernetes",
+    "O&M/basic/未命名.md",
+    "development/Ansible/playbook.md",
+    "development/Ansible/inventoryFIle.md",
+    "development/Ansible",
+    "development/python/╣╪╙┌▒╚╚№/Getting a token through the API.md",
     "development/git.md",
     "development/Development tools/Detail issues.md",
     "development/Development tools/vcpkg.md",
@@ -166,7 +179,6 @@
     "O&M/AWS/░▓╚л╨╘.pdf",
     "O&M/AWS/Cost optimization.pdf",
     "O&M/AWS/Sustainability.pdf",
-    "O&M/AWS/wellarchitected-framework.pdf",
     "O&M/Server/postgresql/Faqs.md",
     "O&M/Server/postgresql/Brief introduction.md",
     "O&M/Server/openstack/╣╪╙┌▒╚╚№/optimization.md",
