@@ -1,0 +1,1 @@
+[RedHatScapWorkbench](https://docs.redhat.com/zh_hans/documentation/red_hat_enterprise_linux/8/html-single/security_hardening/index#scanning-the-system-for-configuration-compliance-and-vulnerabilities_security-hardening)
