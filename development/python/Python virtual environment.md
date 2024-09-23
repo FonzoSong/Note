@@ -1,33 +1,3 @@
-#### 查看当前是否为虚拟环境
-```bash
-which python
-python -m venv myenv```
-#### 创建虚拟环境
-```bash
-python -m venv myenv
-bash
-```
-#### 激活虚拟环境
-```
-source myenv/bin/activate
-```
-#### 退出虚拟环境
-```bash
-deactivate
-```
-
-#### 配置pip源
-```bash
-cat"[global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-extra-index-url =
-    https://pypi.org/simple
-    https://mirrors.aliyun.com/pypi/simple
-timeout = 120
-" > ~/.pip/pip.conf
-
-```
-
 ##### 配置pyenv
 
 环境配置：
@@ -69,4 +39,31 @@ pyenv local "python版本"
 用户级配置
 ```bash
 pyenv global "python版本" 
+```
+#### 查看当前是否为虚拟环境
+```bash
+which python
+python -m venv myenv```
+#### 创建虚拟环境
+```bash
+python -m venv myenv
+bash
+```
+#### 激活虚拟环境
+```
+source myenv/bin/activate
+```
+#### 退出虚拟环境
+```bash
+deactivate
+```
+
+#### 配置pip源
+```bash
+cat "[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+extra-index-url =
+    https://pypi.org/simple
+    https://mirrors.aliyun.com/pypi/simple
+timeout = 120" > ~/.config/pip.conf
 ```

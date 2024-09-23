@@ -1,0 +1,185 @@
+{
+  "main": {
+    "id": "343225e17ad0179f",
+    "type": "split",
+    "children": [
+      {
+        "id": "862656fd6152b946",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e4cc50226f52ffcc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "development/Development tools/git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "53bbe8a75c471daa",
+    "type": "split",
+    "children": [
+      {
+        "id": "2e38b95036740d6f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0b42e3483f75253",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "522139d5e61958c1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "4460a267dac42827",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7660cda621b0009f",
+    "type": "split",
+    "children": [
+      {
+        "id": "455a415da6e4eefc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e48b6db941205cb0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "development/Development tools/git.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ed5d5feeb415575d",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "development/Development tools/git.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "988cbc2c3b86cf23",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a6efa14b78cf1887",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "development/Development tools/git.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "e4cc50226f52ffcc",
+  "lastOpenFiles": [
+    "O&M/Server/openstack/Containerized deployment.md",
+    "O&M/containers/command.md",
+    "development/containers",
+    "O&M/containers",
+    "O&M/Server/未命名",
+    "O&M/Server/未命名.md",
+    "O&M/Server/openstack/deploy.md",
+    "O&M/Server/FTP/deploy.md",
+    "O&M/Server/Frp/Brief introduction.md",
+    "O&M/basic/UserAndGroup.md",
+    "O&M/basic/SSH.md",
+    "O&M/basic/server.md",
+    "O&M/basic/performance.md",
+    "O&M/basic/File.md",
+    "O&M/AWS/Static and dynamic websites.md",
+    "O&M/AWS/README.md",
+    "O&M/AWS/Host a static website.md",
+    "O&M/AWS/Block Storage And Object Storage.md",
+    "O&M/AWS/AWS S3.md",
+    "O&M/AWS/Architecture.md",
+    "O&M/AWS/Amazon EFS.md",
+    "O&M/AWS/VPC.md",
+    "O&M/AWS/RDS.md",
+    "O&M/Server/SQL/postgresql for AWS RDS.md",
+    "O&M/AWS/EC2.md",
+    "development/Development tools/Detail issues.md",
+    "O&M/linux workstation Init.md",
+    "development/python/Python virtual environment.md",
+    "development/README.md",
+    "O&M/Server/samba/未命名",
+    "O&M/Server/samba",
+    "annex/Pasted image 20240921165128.png",
+    "O&M/Server/zabbix"
+  ]
+}

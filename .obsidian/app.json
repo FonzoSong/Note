@@ -1,0 +1,8 @@
+{
+  "showLineNumber": true,
+  "attachmentFolderPath": "annex",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "absolute",
+  "useMarkdownLinks": false
+}
