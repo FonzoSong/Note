@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "development/Development tools/git.md",
+                "file": "O&M/RHEL/registered.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "development/Development tools/git.md",
+                "file": "O&M/RHEL/registered.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "development/Development tools/git.md",
+                "file": "O&M/RHEL/registered.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,16 +125,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "development/Development tools/git.md"
+                "file": "O&M/RHEL/registered.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,38 +148,38 @@
   },
   "active": "e4cc50226f52ffcc",
   "lastOpenFiles": [
+    "O&M/RHEL/Network.md",
+    "O&M/RHEL/registered.md",
+    "O&M/RHEL/security.md",
+    "O&M/RHEL/virtualization.md",
+    "O&M/Shell/compile shell.md",
+    "O&M/README.md",
+    "README.md",
+    "development/Development tools/git.md",
+    "development/README.md",
+    "O&M/basic/File.md",
+    "annex/Pasted image 20240921165128.png",
+    "O&M/basic/SSH.md",
+    "O&M/Server/zabbix/synopsis.md",
+    "O&M/Server/zabbix/deplay.md",
+    "O&M/Server/zabbix",
+    "O&M/Server/samba/deplay.md",
+    "O&M/Server/samba",
     "O&M/Server/openstack/Containerized deployment.md",
+    "O&M/Server/SQL/postgresql for AWS RDS.md",
+    "O&M/Server/SQL/MySQL And Mariadb/Master-slave configuration.md",
+    "O&M/linux workstation Init.md",
+    "development/git.md",
+    "O&M/AWS/postgresql for AWS RDS.md",
+    "O&M/AWS/VPC.md",
+    "O&M/AWS/RDS.md",
+    "O&M/AWS/EC2.md",
     "O&M/containers/command.md",
     "development/containers",
     "O&M/containers",
     "O&M/Server/未命名",
     "O&M/Server/未命名.md",
     "O&M/Server/openstack/deploy.md",
-    "O&M/Server/FTP/deploy.md",
-    "O&M/Server/Frp/Brief introduction.md",
-    "O&M/basic/UserAndGroup.md",
-    "O&M/basic/SSH.md",
-    "O&M/basic/server.md",
-    "O&M/basic/performance.md",
-    "O&M/basic/File.md",
-    "O&M/AWS/Static and dynamic websites.md",
-    "O&M/AWS/README.md",
-    "O&M/AWS/Host a static website.md",
-    "O&M/AWS/Block Storage And Object Storage.md",
-    "O&M/AWS/AWS S3.md",
-    "O&M/AWS/Architecture.md",
-    "O&M/AWS/Amazon EFS.md",
-    "O&M/AWS/VPC.md",
-    "O&M/AWS/RDS.md",
-    "O&M/Server/SQL/postgresql for AWS RDS.md",
-    "O&M/AWS/EC2.md",
-    "development/Development tools/Detail issues.md",
-    "O&M/linux workstation Init.md",
-    "development/python/Python virtual environment.md",
-    "development/README.md",
-    "O&M/Server/samba/未命名",
-    "O&M/Server/samba",
-    "annex/Pasted image 20240921165128.png",
-    "O&M/Server/zabbix"
+    "O&M/Server/samba/未命名"
   ]
 }
