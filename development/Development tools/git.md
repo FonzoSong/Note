@@ -128,3 +128,13 @@ git branch --set-upstream-to=origin/<分支名> <分支名>
 #需要新建分支
 
 ```
+
+### 本地分支覆盖
+```bash
+# 切换到要保留的分支
+git checkout master
+# 强制推送本地 `master` 分支到远程 `main` 分支
+git push origin master:main --force
+步骤 3：验证推送状态
+git log origin/main
+```
