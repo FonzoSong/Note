@@ -2,7 +2,7 @@
 
 环境配置：
 ```bash
-$ sudo yum install gcc zlib-devel bzip2 bzip2-devel readline-devel sqlite \
+$ sudo dnf install gcc zlib-devel bzip2 bzip2-devel readline-devel sqlite \
 sqlite-devel openssl-devel xz xz-devel libffi-devel
 $ curl https://pyenv.run | bash
 ```
