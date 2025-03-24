@@ -20,8 +20,8 @@ https_proxy="http://your_proxy_address:port"
 
 ### docker 代理配置文件
 ```bash
-mkdir -p /etc/systemd/system/docker.service.d
-vim /etc/systemd/system/docker.service.d/proxy.conf
+sudo mkdir -p /etc/systemd/system/docker.service.d
+sudo vim /etc/systemd/system/docker.service.d/proxy.conf
 ```
 ``` conf
 [Service]

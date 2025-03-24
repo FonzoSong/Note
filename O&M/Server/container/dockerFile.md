@@ -190,7 +190,9 @@ FROM ubuntu:20.04
 • **示例：**
  `dockerfile  USER appuser  `
 
-------
+---
+#### 5.9 
+---
 
 ### 6. 使用建议与注意事项
 
