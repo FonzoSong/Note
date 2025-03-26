@@ -17,6 +17,28 @@ sudo dnf update -y && sudo dnf install -y containerd.io
 
 ---
 
+### 3. 配置`systemd` cgroup驱动
+
+````bash
+containerd config default | sudo tee /etc/containerd/config.toml
+````
+**更改配置文件：**
+结合 runc 使用 systemd cgroup 驱动，在 /etc/containerd/config.toml 中设置：
+
+````ini
+[plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
+  [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc.options]
+    SystemdCgroup = true ## 原本是false
+````
+
+**重启containerd**
+
+```bash
+sudo systemctl enable --now containerd 
+```
+
+---
+
 ### 3. 开启端口转发
 
 ```bash
@@ -55,7 +77,7 @@ sudo sed -i 's/^SELINUX=enforcing$/SELINUX=permissive/' /etc/selinux/config
 
 ### 6. 开放防火墙
 
-master：
+**master：**
 
 ```bash
 # 开放 Kubernetes API 服务器端口
@@ -72,7 +94,7 @@ sudo firewall-cmd --add-port=10257/tcp --permanent
 sudo firewall-cmd --reload
 ```
 
-work：
+**work：**
 
 ```bash
 # 开放 kubelet API 端口
@@ -114,66 +136,6 @@ sudo kubeadm config images pull
 sudo kubeadm init --pod-network-cidr=172.168.0.0/16
 ```
 
-## Calico
-
-### 1. 安装operator
-
-```bash
-kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.29.2/manifests/tigera-operator.yaml
-```
-
-### 2. 下载YAML清单模板
-
-```bash
-curl https://raw.githubusercontent.com/projectcalico/calico/v3.29.2/manifests/custom-resources.yaml -O
-```
-
-**内容：**、
-
-```yaml
-# This section includes base Calico installation configuration.
-# For more information, see: https://docs.tigera.io/calico/latest/reference/installation/api#operator.tigera.io/v1.Installation
-apiVersion: operator.tigera.io/v1
-kind: Installation
-metadata:
-  name: default
-spec:
-  # Configures Calico networking.
-  calicoNetwork:
-    ipPools:
-    - name: default-ipv4-ippool
-      blockSize: 26
-      cidr: 172.168.0.0/16 ## 将cidr改为你在引导控制平面时设置的cidr
-      encapsulation: VXLANCrossSubnet
-      natOutgoing: Enabled
-      nodeSelector: all()
-
 ---
 
-# This section configures the Calico API server.
-# For more information, see: https://docs.tigera.io/calico/latest/reference/installation/api#operator.tigera.io/v1.APIServer
-apiVersion: operator.tigera.io/v1
-kind: APIServer
-metadata:
-  name: default
-spec: {}
-```
-
-### 安装calico
-
-```bash
-kubectl create -f custom-resources.yaml
-```
-
-### 验证
-
-```bash
-watch kubectl get pods -n calico-system
-```
-
-### 安装calicoctl作为kubectl的插件
-
-```bash
-cd /usr/local/bin/ && while [ ! -f kubectl-calico ]; do sudo curl -L https://github.com/projectcalico/calico/releases/download/v3.29.2/calicoctl-linux-amd64 -o kubectl-calico || sleep 5; done && sudo chmod +x kubectl-calico
-```
-
+## cilium Network
