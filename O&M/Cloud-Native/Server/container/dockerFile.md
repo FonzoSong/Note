@@ -134,7 +134,7 @@ FROM ubuntu:20.04
  \- 当检测失败达到一定次数时，Docker 可认为容器不健康，从而进行重启或其他处理。
 
 • **示例：**
- `dockerfile  HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \   CMD curl -f http://localhost/health || exit 1  `
+ `dockerfile  HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \   CMD curl -f http://localhost/health || exit 1`
 
 ---
 
@@ -145,7 +145,7 @@ FROM ubuntu:20.04
  \- 便于镜像管理和追踪信息。
 
 • **示例：**
- `dockerfile  LABEL maintainer="your.email@example.com" \   version="1.0" \   description="A sample Dockerfile with advanced features."  `
+dockerfile  LABEL maintainer="your.email@example.com" \   version="1.0" \   description="A sample Dockerfile with advanced features."
 
 ---
 
@@ -156,7 +156,7 @@ FROM ubuntu:20.04
  \- 适用于创建基础镜像，使后续镜像构建更加自动化，但需谨慎使用以免造成意外影响。
 
 • **示例：**
- `dockerfile  ONBUILD COPY . /app  ONBUILD RUN make /app  `
+ `dockerfile  ONBUILD COPY . /app  ONBUILD RUN make /app`
 
 ---
 
@@ -167,7 +167,7 @@ FROM ubuntu:20.04
  \- 可以在启动容器时将该挂载点绑定到宿主机目录或数据卷。
 
 • **示例：**
- `dockerfile  VOLUME [ "/data" ]  `
+ `dockerfile  VOLUME [ "/data" ]`
 
 ---
 
@@ -178,7 +178,7 @@ FROM ubuntu:20.04
  \- 如果目录不存在，Docker 会自动创建。
 
 • **示例：**
- `dockerfile  WORKDIR /usr/src/app  `
+ `dockerfile  WORKDIR /usr/src/app`
 
 ---
 
@@ -188,18 +188,24 @@ FROM ubuntu:20.04
  \- 设置容器运行时的用户，避免以 root 用户运行，提升安全性。
 
 • **示例：**
- `dockerfile  USER appuser  `
+ `dockerfile  USER appuser`
 
 ---
-#### 5.9 
+#### 5.9 ENTRYPONT指令
+
+• **用途：**
+ \- 设置容器启动时运行的命令,让容器以应用程序或者服务的形式运行,不会被忽略，一定会执行。
+
+• **示例：**
+ `ENTRYPOINT ["/bin/bash","-c","echo hello docker"]`
+
 ---
 
 ### 6. 使用建议与注意事项
 
 • 使用 ARG 定义构建参数时，避免将敏感信息写入 Dockerfile；
- • ENV 设置的环境变量在镜像中长期存在，适合存储应用运行时所需的配置信息；
- • 利用 HEALTHCHECK 能够及时发现并处理应用异常，提升系统稳定性；
- • ONBUILD 指令可使基础镜像更具扩展性，但在公共镜像中使用时要考虑对子镜像的影响；
- • 合理使用 LABEL、VOLUME、WORKDIR、USER 等指令，可以使镜像更加规范、易于维护和安全。
-
-通过综合利用以上高级特性，你可以构建出更灵活、功能更强大且更易于管理的 Docker 镜像，从而满足复杂应用场景的需求。
+• ENV 设置的环境变量在镜像中长期存在，适合存储应用运行时所需的配置信息；
+• 利用 HEALTHCHECK 能够及时发现并处理应用异常，提升系统稳定性；
+• ONBUILD 指令可使基础镜像更具扩展性，但在公共镜像中使用时要考虑对子镜像的影响；
+• 合理使用 LABEL、VOLUME、WORKDIR、USER 等指令，可以使镜像更加规范、易于维护和安全。
+• 多个CMD、ENTRYPONT命令只有最后一个CMD、ENTRYPONT会执行。

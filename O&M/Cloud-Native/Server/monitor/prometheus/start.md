@@ -4,4 +4,4 @@
 
 然而，Prometheus 仅作为时序数据库存在，需要与 Grafana、Alertmanager、Exporters 和 Pushgateway 等工具配合使用，以实现数据可视化、告警管理和数据推送等功能。
 
-![promtheus](../../../../annex/promtheus.png)
+![promtheus](../../../../../annex/promtheus.png)

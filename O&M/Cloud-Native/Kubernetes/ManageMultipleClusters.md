@@ -31,6 +31,8 @@
    ```bash
    kubectl config use-context <context-name>
    ```
+   
+
 
 ------
 
@@ -46,5 +48,3 @@ kubectl --kubeconfig=/path/to/admin2.conf get pods -A
 ```
 
 这样可以临时指定 `kubeconfig` 文件，而不影响全局环境。
-
-### 
