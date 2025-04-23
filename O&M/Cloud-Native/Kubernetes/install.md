@@ -3,7 +3,7 @@
 ### 1. 添加Host解析
 
 ```bash
-echo 127.0.0.1  $(hostname) | sudo  tee -a  /etc/hosts
+echo 127.0.0.1  $(hostname) | sudo  tee -a  /etc/hosts 1>> /dev/null
 ```
 
 ---
@@ -20,7 +20,7 @@ sudo dnf update -y && sudo dnf install -y containerd.io
 ### 3. 配置`systemd` cgroup驱动
 
 ````bash
-containerd config default | sudo tee /etc/containerd/config.toml
+containerd config default | sudo tee /etc/containerd/config.toml 1>> /dev/null
 ````
 **更改配置文件：**
 结合 runc 使用 systemd cgroup 驱动，在 /etc/containerd/config.toml 中设置：
@@ -39,7 +39,7 @@ net.ipv4.ip_forward = 1
 EOF
 
 # 应用 sysctl 参数而不重新启动
-sudo sysctl --system
+sudo sysctl --system 1>> /dev/null
 ```
 
 ---
@@ -121,7 +121,7 @@ gpgkey=https://pkgs.k8s.io/core:/stable:/v1.32/rpm/repodata/repomd.xml.key
 exclude=kubelet kubeadm kubectl cri-tools kubernetes-cni
 EOF
 sudo yum install -y kubelet kubeadm kubectl --disableexcludes=kubernetes
-sudo systemctl enable kubelet
+sudo systemctl enable kubelet --now
 ```
 
 ---
@@ -130,12 +130,19 @@ sudo systemctl enable kubelet
 
 ```bash
 sudo kubeadm config images pull
-sudo kubeadm init -f kubeadm-config.yaml
+sudo kubeadm init --config=kubeadm-config.yaml
 ```
 
 **kubeadm-config.yaml：**
 
 ```yaml
+apiVersion: kubeadm.k8s.io/v1beta3
+kind: InitConfiguration
+nodeRegistration:
+  kubeletExtraArgs: {}
+skipPhases:
+  - addon/kube-proxy
+---
 apiVersion: kubeadm.k8s.io/v1beta3
 kind: ClusterConfiguration
 controllerManager:
