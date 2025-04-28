@@ -232,7 +232,13 @@ cilium status --wait
 cilium connectivity test
 ```
 
-### 5. 添加Node
+### 5. 获取join命令（控制平面节点执行）
+
+```bash
+echo "sudo kubeadm join $(sudo grep 'server:' /etc/kubernetes/admin.conf | awk '{print $2}' | cut -d/ -f3) --token $(sudo kubeadm token create --print-join-command 2>/dev/null | awk '{print $5}') --discovery-token-ca-cert-hash sha256:$(sudo openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | sudo openssl rsa -pubin -outform der 2>/dev/null | sha256sum | awk '{print $1}')"
+```
+
+### 6. 添加Node（工作节点执行）
 
 ```bash
 kubeadm join ApiServer:Port --token Token <control-plane-host>:<control-plane-port>   --discovery-token-ca-cert-hash sha256:Hash
