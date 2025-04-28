@@ -1,8 +1,9 @@
 ### 约定:
 仅在 `/O&M/*` 下
-- 默认使用 `RHEL9` 系统;
-- 默认未启用 `epel repo` ;
-- 待定---
+|   kubernetes   |           v1.32.3            |
+| :------------: | :--------------------------: |
+|   system OS    | Red Hat Enterprise Linux 9.5 |
+| network plugin |        cilium v1.17.2        |
 
 ### 关于为什么不记录安装手册
 当前各个linux发行版的发行商都建立了完备的包repo库；
