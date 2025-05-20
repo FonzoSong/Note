@@ -1,6 +1,11 @@
 ###为文件名添加一个 '.' 即 将本文件文件名更名为 '.gitignore' 存放到 '$user/' 下即可
 ### Add a '.' to the file name, i.e. change the file name to '.gitignore' and store it under '$user/'
 
+#tar
+.tar
+.tgz
+.tar.gz
+.tz
 
 .obsidian
 **/forgame/
