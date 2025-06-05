@@ -30,7 +30,7 @@ YUM系统采用C/S架构设计，具备双重功能模块：
    - RPM数字签名校验（需配置GPG密钥）
    - 执行pre/post安装脚本
 
-![yum-workflow-diagram](../../annex/yum-workflow-diagram.png)
+![yum-workflow-diagram](https://raw.githubusercontent.com/FonzoSong/NoteImages/master/img/yum-workflow-diagram.png)
 
 #### YUM配置规范详解
 配置文件存储于`/etc/yum.repos.d/`目录，建议采用分源配置策略（每源独立文件）。以下为增强型配置模板：
