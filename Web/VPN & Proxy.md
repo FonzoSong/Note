@@ -21,7 +21,7 @@ socks协议设计之初的目的：就是为了让有权限的用户可以穿过
 
 别急先看下图:
 
-![](../annex/TCP.gif)
+![](https://raw.githubusercontent.com/FonzoSong/NoteImages/master/img/TCP.gif)
 
 我们之所以能够访问google是使用web通过http协议**应用层(第七层)**
 
@@ -61,4 +61,4 @@ VPN的主要**目的**：是给**企业内网直接传输加密数据**，最重
 
 PS: 我们可以使用 AWS (一定要是国际版) 的ec2服务,部署一个openVPN服务,在社区镜像中有打包好的,并且AWS 新用户有整整一年的免费ec2可以用;
 
-![](../annex/wukong.jpeg)
+![](https://raw.githubusercontent.com/FonzoSong/NoteImages/master/img/wukong.jpeg)
