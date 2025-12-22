@@ -124,3 +124,8 @@ uv pip compile --upgrade requirements.in -o requirements.lock
 # 预览更新
 uv pip compile --upgrade requirements.in --dry-run
 ```
+
+### 配置使用清华源
+
+[快速设置 uv 默认源为国内镜像 | uv 中文文档](https://uv.oaix.tech/blog/2025/06/17/quickly-set-uv-package-index-is-china-mirror/)
+
