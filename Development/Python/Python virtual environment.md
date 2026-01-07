@@ -1,69 +1,131 @@
-##### 配置pyenv
+# Python `uv` 工具快速入门手册
 
-环境配置：
+`uv` 是一个用 Rust 编写的极快 Python 包管理器和解析器，旨在替代 `pip` 和 `pip-tools` 的工作流，同时也可替代 `virtualenv`。以下是快速入门指南：
+
+## 安装 `uv`
+
 ```bash
-$ sudo dnf install gcc zlib-devel bzip2 bzip2-devel readline-devel sqlite \
-sqlite-devel openssl-devel xz xz-devel libffi-devel
-$ curl https://pyenv.run | bash
-```
-运行成功：
-```bash
-WARNING: seems you still have not added 'pyenv' to the load path.
+# 使用 pip 安装
+pip install uv
 
-# Load pyenv automatically by appending
-# the following to 
-# ~/.bash_profile if it exists, otherwise ~/.profile (for login shells)
-# and ~/.bashrc (for interactive shells) :
-
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# Restart your shell for the changes to take effect.
-
-# Load pyenv-virtualenv automatically by adding
-# the following to ~/.bashrc:
-
-eval "$(pyenv virtualenv-init -)"
+# 或者通过官方脚本安装 (Linux/macOS)
+curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-安装python
+## 基本命令
+
+### 1. 创建虚拟环境
 ```bash
-pyenv install -v "python版本" 
+# 创建名为 .venv 的虚拟环境
+uv venv
 ```
 
-为目录配置python
+### 2. 激活虚拟环境
 ```bash
-pyenv local "python版本" 
-```
-用户级配置
-```bash
-pyenv global "python版本" 
-```
-#### 查看当前是否为虚拟环境
-```bash
-which python
-python -m venv myenv```
-#### 创建虚拟环境
-```bash
-python -m venv myenv
-bash
-```
-#### 激活虚拟环境
-```
-source myenv/bin/activate
-```
-#### 退出虚拟环境
-```bash
-deactivate
+# Linux/macOS
+source .venv/bin/activate
+
+# Windows
+.\.venv\Scripts\activate
 ```
 
-#### 配置pip源
+### 3. 安装包
 ```bash
-cat "[global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-extra-index-url =
-    https://pypi.org/simple
-    https://mirrors.aliyun.com/pypi/simple
-timeout = 120" > ~/.config/pip.conf
+# 安装单个包
+uv pip install pandas
+
+# 安装多个包
+uv pip install numpy matplotlib
+
+# 从 requirements.txt 安装
+uv pip install -r requirements.txt
 ```
+
+### 4. 生成锁文件
+```bash
+# 生成 requirements.txt
+uv pip compile requirements.in -o requirements.txt
+
+# 生成跨平台兼容的锁文件
+uv pip compile requirements.in --output-file requirements.lock
+```
+
+### 5. 使用锁文件安装
+```bash
+uv pip sync requirements.lock
+```
+
+### 6. 导出环境配置
+```bash
+# 导出当前环境所有包
+uv pip freeze > requirements.txt
+```
+
+### 7. 卸载包
+```bash
+uv pip uninstall package-name
+```
+
+## 高级功能
+
+### 快速依赖解析
+```bash
+# 快速解析并安装（无需生成中间文件）
+uv pip install "fastapi[all]"
+```
+
+### 兼容性选项
+```bash
+# 指定 Python 版本
+uv venv --python 3.11
+
+# 生成与特定系统兼容的锁文件
+uv pip compile requirements.in --python-version 3.10 --platform linux
+```
+
+### 缓存管理
+```bash
+# 显示缓存信息
+uv cache dir
+uv cache info
+
+# 清理缓存
+uv cache clean
+```
+
+## 工作流示例
+
+### 标准工作流
+```bash
+# 1. 创建环境
+uv venv
+
+# 2. 激活环境
+source .venv/bin/activate
+
+# 3. 安装基础包
+uv pip install pandas numpy
+
+# 4. 导出初始配置
+uv pip freeze > requirements.in
+
+# 5. 生成锁文件
+uv pip compile requirements.in -o requirements.lock
+
+# 6. 在其他机器上同步
+uv pip sync requirements.lock
+```
+
+### 替代 `pip-tools`
+```bash
+# 更新依赖
+uv pip compile --upgrade requirements.in -o requirements.lock
+
+# 预览更新
+uv pip compile --upgrade requirements.in --dry-run
+```
+
+### 配置使用清华源
+
+[快速设置 uv 默认源为国内镜像 | uv 中文文档](https://uv.oaix.tech/blog/2025/06/17/quickly-set-uv-package-index-is-china-mirror/)
+
