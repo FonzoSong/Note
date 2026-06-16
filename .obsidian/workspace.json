@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "65c8f0ee2c8adcd3",
+        "id": "4468dded213bdea7",
         "type": "tabs",
         "children": [
           {
-            "id": "9722c9abf1e81995",
+            "id": "d6277028e2c6c510",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": ".obsidian/plugins/obsidian-git/main.js",
-                "bFile": ".obsidian/plugins/obsidian-git/main.js",
-                "aRef": ""
+                "file": "Development/Algo/Tree/MerkleTree.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: main.js  (Working Tree)"
+              "icon": "lucide-file",
+              "title": "MerkleTree"
             }
           }
         ]
@@ -191,8 +191,35 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "9722c9abf1e81995",
+  "active": "d6277028e2c6c510",
   "lastOpenFiles": [
-    "Web/MTU.md"
+    "English/ForTense.md",
+    "O&M/basic/performance.md",
+    "O&M/basic/server.md",
+    "O&M/basic/SSH.md",
+    "O&M/basic/systemd.md",
+    "O&M/basic/UserAndGroup.md",
+    "O&M/basic/vimError.md",
+    "O&M/Cloud-Native/Kubernetes/howToWork.md",
+    "O&M/Cloud-Native/Kubernetes/install.md",
+    "O&M/Cloud-Native/README.md",
+    "O&M/Server/ansible/balabala.md",
+    "O&M/Server/ceph/What`sCeph.md",
+    "O&M/Server/Dataphin/项目分层与表前缀分层.md",
+    "O&M/Server/Dataphin/物理表与逻辑表.md",
+    "O&M/Server/Dataphin/数据板块.md",
+    "O&M/Server/Dataphin/数仓分层.md",
+    "O&M/Server/Dataphin/基线任务.md",
+    "O&M/Server/frp/Brief introduction.md",
+    "O&M/Server/harbor/UseSelf-signedCertificates.md",
+    "O&M/Server/memcached/introduce.md",
+    "O&M/Server/memcached/About adjusting the data summarization algorithm (hash) of memcached to md5.md",
+    "O&M/Server/monitor/README.md",
+    "O&M/Server/monitor/Performance indicators.md",
+    "O&M/Server/monitor/zabbix/synopsis.md",
+    "O&M/Server/monitor/prometheus/start.md",
+    "O&M/Server/monitor/prometheus/K8sError.md",
+    "Development/base",
+    "O&M/Shell/未命名.base"
   ]
 }

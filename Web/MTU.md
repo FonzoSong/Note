@@ -93,15 +93,15 @@ MTU = 1500 bytes
 
 真实链路中可能经过:
 
-| 协议/封装 | 开销 |
-| --------- | ---- |
-| IPv4      | 20B  |
-| TCP       | 20B  |
-| PPPoE     | 8B   |
-| VXLAN     | 50B  |
-| GRE       | 24B  |
-| WireGuard | 60B  |
-| TUN/TAP   | 若干 |
+| 协议/封装     | 开销  |
+| --------- | --- |
+| IPv4      | 20B |
+| TCP       | 20B |
+| PPPoE     | 8B  |
+| VXLAN     | 50B |
+| GRE       | 24B |
+| WireGuard | 60B |
+| TUN/TAP   | 若干  |
 
 例如:
 
