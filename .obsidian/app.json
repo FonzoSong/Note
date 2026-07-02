@@ -1,5 +1,6 @@
 {
   "newFileLocation": "current",
   "alwaysUpdateLinks": true,
-  "openBehavior": ""
+  "openBehavior": "",
+  "promptDelete": false
 }
