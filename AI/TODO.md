@@ -1,0 +1,10 @@
+- [x] Prompt 基础. ✅ 2026-07-02
+- [ ] Structured Output.
+- [ ] XML Prompt.
+- [ ] Context Engineering.
+- [ ] Tool Calling.
+- [ ] MCP.
+- [ ] AI Agent.
+- [ ] Prompt Evaluation.
+- [ ] Prompt Versioning.
+- [ ] PromptOps.
