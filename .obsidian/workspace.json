@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "O&M/Cloud-Native/ZeroTrustArchitecture/CoreComponentsOfZeroTrust.md",
+                "file": "O&M/Cloud-Native/ZeroTrustArchitecture/WhyDoWeWeedZeroTrustArchitecture.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CoreComponentsOfZeroTrust"
+              "title": "WhyDoWeWeedZeroTrustArchitecture"
             }
           }
         ]
@@ -194,6 +194,7 @@
   "active": "0db6de131c7de08f",
   "lastOpenFiles": [
     "O&M/Cloud-Native/ZeroTrustArchitecture/WhatIsZeroTrust.md",
+    "O&M/Cloud-Native/ZeroTrustArchitecture/WhatExactlyOccurredDuringARequest.md",
     "O&M/Cloud-Native/ZeroTrustArchitecture/CoreComponentsOfZeroTrust.md",
     "O&M/Cloud-Native/ZeroTrustArchitecture/WhyDoWeWeedZeroTrustArchitecture.md",
     "O&M/Cloud-Native/Zero Trust Architecture/未命名.md",
@@ -221,7 +222,6 @@
     "O&M/basic/server.md",
     "O&M/basic/SSH.md",
     "O&M/basic/systemd.md",
-    "O&M/basic/UserAndGroup.md",
     "Development/base",
     "O&M/Shell/未命名.base"
   ]
