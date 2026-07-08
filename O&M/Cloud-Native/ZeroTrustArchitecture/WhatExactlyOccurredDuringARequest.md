@@ -1,13 +1,32 @@
 > **本章目标**
+
 >
-> 阅读完本章后，应能够理解：
+
+> 阅读完本章后, 应能够理解:
+
 >
-> - 一个请求在零信任架构中的完整生命周期
-> - 每个组件在整个调用链中的职责
-> - 身份是如何传播的（从用户到服务再到数据库）
-> - mTLS、策略引擎、Service Mesh 分别在哪一步发挥作用
-> - 每一步大约增加多少性能开销
-> - 哪些步骤属于数据平面（Data Plane），哪些属于控制平面（Control Plane）
+
+> * 为什么零信任将"身份(Identity)"作为新的安全边界
+
+> * Authentication 与 Authorization 的区别及二者在访问控制中的职责
+
+> * Human Identity、Machine Identity、Service Identity、Device Identity 分别代表什么, 以及它们在云原生环境中的作用
+
+> * OAuth 2.0 解决什么问题, OIDC 为什么建立在 OAuth 2.0 之上
+
+> * JWT 的内部结构、签名机制及其安全特性
+
+> * Access Token 与 Refresh Token 的生命周期设计及 Token Rotation 的意义
+
+> * PKCE 如何防止 Authorization Code 被截获攻击, 为什么移动端和 SPA 必须使用 PKCE
+
+> * Kubernetes、SPIFFE、云 IAM 等平台如何为工作负载建立 Machine Identity 与 Service Identity
+
+> * LDAP、Kerberos、SAML、OAuth 2.0、OIDC 等主流身份体系之间的设计思想、优缺点及适用场景
+
+> * 一个身份是如何在 API Gateway、Service Mesh、微服务之间完成传播与验证的
+
+> * 如何构建符合零信任原则的现代身份认证体系
 
 ---
 
