@@ -12,3 +12,4 @@
 - [LVM 配置](LvmConfiguration.md)
 - [Linux 源码编译](LinuxSourceBuilds.md)
 - [Linux 面试速记](LinuxInterviewNotes.md)
+- [阿里云 Linux 系统故障排查手册](AlibabaCloudLinuxTroubleshootingGuide.pdf)
