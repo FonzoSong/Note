@@ -1,7 +1,15 @@
 # Runtime state
 .obsidian/workspace.json
 .obsidian/workspace-mobile.json
-.obsidian\plugins\obsidian-git\data.json
-.trash\
+.obsidian/plugins/obsidian-git/data.json
+.trash/
+
 # Cache
 .obsidian/cache/
+
+# Temporary files
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db

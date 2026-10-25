@@ -1,6 +1,7 @@
 # 建立者的碎碎念
 
 作为一名入门从业者;我认为在 AI 高速发展的大背景下,非底层的开发人员已经岌岌可危,所以目前最好的方向就是:"开发+运维";自动化;容器化;是未来运维技术发展的主要方向;所以我们主要围绕以下关键词进行活动:
+
 - 高并发后端编程
 - 自动化运维
 - 容器
@@ -9,25 +10,27 @@
 当然,我更推荐游戏开发这个行业,但是游戏开发行业是需要资本的;
 所以还是老老实实的当24小时待命牛马吧;
 
-##### 个人推荐教程:
+## 个人推荐教程
 
-[GeekHour](https://youtube.com/@geekhour_net?si=2nv5kKkzAAIBHph_)
-[CodeCrafters](https://app.codecrafters.io/r/zealous-crocodile-405852)
+- [GeekHour](https://youtube.com/@geekhour_net?si=2nv5kKkzAAIBHph_)
+- [CodeCrafters](https://app.codecrafters.io/r/zealous-crocodile-405852)
 
-# 免责声明
+## 免责声明
 
 由于本项目为本人学习与实践中积累而成,所以含有未标明出处的内容。这些内容的版权属于原作者或版权所有者。如果您认为本项目中的某些内容侵犯了您的权益，请立即与我联系，我将在收到通知后尽快移除相关内容。本项目仅用于非商业用途，如有涉及商业用途，请联系原作者或版权所有者获得许可。
 
 联系方式：
+
 - 电子邮件：fonzo.s@outlook.com
 
 ## 知识库结构
 
-- `AI/`：AI 使用与提示工程记录
-- `Development/`：编程语言、算法、数据库和开发工具
-- `O&M/`：Linux 基础、Shell、服务器、中间件和云原生运维
-- `Math/`：数学基础与离散数学
-- `English/`：英语语法学习记录
-- `Web/`：网络协议、代理与 Web 技术
+- [AI](AI/README.md)：AI 使用与提示工程记录
+- [Development](Development/README.md)：编程语言、算法、数据库和开发工具
+- [English](English/README.md)：英语语法学习记录
+- [Mathematics](Mathematics/README.md)：数学基础与离散数学
+- [Networking](Networking/README.md)：网络协议、代理与 Web 技术
+- [Operations](Operations/README.md)：Linux、Shell、服务器、中间件和云原生运维
+- [Todo](Todo.md)：待办事项
 
 各主题目录中的 README 用于说明该目录的收录范围；具体实践记录按主题继续下沉到对应子目录。
