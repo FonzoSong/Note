@@ -1,3 +1,20 @@
+# Runtime state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/plugins/obsidian-git/data.json
+.trash/
+
+# Cache
+.obsidian/cache/
+
+# Temporary files
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Java build outputs and IDE state
 # Compiled class file
 *.class
 
@@ -19,7 +36,7 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, seehttp://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 
 .classpath
